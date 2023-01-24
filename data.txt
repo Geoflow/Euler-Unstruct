@@ -1,0 +1,28 @@
+mesh
+Meshes/plate.mesh
+
+t0
+0.0
+tfinal
+0.2
+dt
+0.0005
+
+scheme
+ExplicitEuler
+# ExplicitEuler = Explicit Euler, RungeKutta = Runge Kutta 4
+
+velocity
+rotational 0.5 0.5
+#uniform c d, rotational c d, sinusoidal e f
+
+initial_condition
+gaussian 0. 0. 7.0
+# gaussian x0 y0 a, rectangular x0 y0 b
+
+numerical_flux
+upwind
+# centered or upwind
+
+results
+Results/
